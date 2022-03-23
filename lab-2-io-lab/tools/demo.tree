@@ -1,0 +1,13 @@
+#---------------------------------------------------------------------------------------------------
+# Lab 2: I/O Lab                          Fall 2020                               System Programming
+#
+# demo directory tree
+#
+f ./demo/one 1 0
+f ./demo/two 2 0
+f ./demo/subdir1/thisisanextremelylongfilenameforsuchasimplisticfile 1000 0
+f ./demo/subdir1/sparsefile 4096 4096
+l ./demo/subdir2/symboliclink ./demo/two
+l ./demo/subdir2/brokenlink ./demo/three
+p ./demo/subdir3/pipe
+s ./demo/subdir3/socket

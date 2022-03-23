@@ -1,0 +1,1 @@
+dirtree.o: dirtree.c

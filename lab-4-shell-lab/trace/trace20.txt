@@ -1,0 +1,9 @@
+#
+# trace20.txt - pipe test2 multiple pipes
+#
+
+ls | grep my
+
+ls | grep my | grep spin
+
+ls | grep 0 | grep 1 | sort

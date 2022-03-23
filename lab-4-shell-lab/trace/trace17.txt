@@ -1,0 +1,10 @@
+#
+# trace17.txt - Output redirection 
+#
+
+/bin/echo Hello SysProg! > file
+
+/bin/cat file
+
+/bin/rm file
+

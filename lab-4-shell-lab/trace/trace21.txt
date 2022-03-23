@@ -1,0 +1,9 @@
+#
+# trace21.txt - pipe test3 redirection and pipes
+#
+
+ls | grep my > test21.txt
+
+cat test21.txt
+
+rm test21.txt

@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUF_SIZE	client.c	/^#define BUF_SIZE /;"	d	file:
+BUF_SIZE	mcdonalds.c	/^#define BUF_SIZE /;"	d	file:
+BURGER_BIGMAC	client.c	/^    BURGER_BIGMAC,$/;"	e	enum:burger_type	file:
+BURGER_BIGMAC	mcdonalds.c	/^    BURGER_BIGMAC,$/;"	e	enum:burger_type	file:
+BURGER_BULGOGI	client.c	/^    BURGER_BULGOGI,$/;"	e	enum:burger_type	file:
+BURGER_BULGOGI	mcdonalds.c	/^    BURGER_BULGOGI,$/;"	e	enum:burger_type	file:
+BURGER_CHEESE	client.c	/^    BURGER_CHEESE,$/;"	e	enum:burger_type	file:
+BURGER_CHEESE	mcdonalds.c	/^    BURGER_CHEESE,$/;"	e	enum:burger_type	file:
+BURGER_CHICKEN	client.c	/^    BURGER_CHICKEN,$/;"	e	enum:burger_type	file:
+BURGER_CHICKEN	mcdonalds.c	/^    BURGER_CHICKEN,$/;"	e	enum:burger_type	file:
+burger_names	client.c	/^char *burger_names[] ={"bigmac", "cheese", "chicken", "bulgogi"}; \/\/\/< structure to store burger names$/;"	v
+burger_names	mcdonalds.c	/^char *burger_names[] = {"bigmac", "cheese", "chicken", "bulgogi"}; \/\/\/< structure to store burger names$/;"	v
+burger_type	client.c	/^enum burger_type {$/;"	g	file:
+burger_type	mcdonalds.c	/^enum burger_type {$/;"	g	file:
+BURGER_TYPE_MAX	client.c	/^    BURGER_TYPE_MAX$/;"	e	enum:burger_type	file:
+BURGER_TYPE_MAX	mcdonalds.c	/^    BURGER_TYPE_MAX$/;"	e	enum:burger_type	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -Wno-stringop-truncation -O2 -g -lpthread$/;"	m
+COMMON	Makefile	/^COMMON=net.o$/;"	m
+cond	mcdonalds.c	/^    pthread_cond_t cond;                                      \/\/\/< conditional variable$/;"	m	struct:__node	file:
+count	mcdonalds.c	/^    unsigned int count;                                       \/\/\/< number of nodes in list$/;"	m	struct:__order_list	file:
+customerID	mcdonalds.c	/^    unsigned int customerID;                                  \/\/\/< customer ID that requested$/;"	m	struct:__node	file:
+CUSTOMER_MAX	mcdonalds.c	/^#define CUSTOMER_MAX /;"	d	file:
+DEPFLAGS	Makefile	/^DEPFLAGS=-MMD -MP$/;"	m
+DEPS	Makefile	/^DEPS=$(SOURCES:.c=.d)$/;"	m
+dump_sockaddr	net.c	/^void dump_sockaddr(struct sockaddr *sa)$/;"	f
+exit_mcdonalds	mcdonalds.c	/^void exit_mcdonalds(void)$/;"	f
+getsocklist	net.c	/^struct addrinfo *getsocklist(const char *host, unsigned short port, int family, int type, $/;"	f
+get_data	net.c	/^int get_data(int sock, char *buf, size_t len)$/;"	f
+get_line	net.c	/^int get_line(int sock, char **buf, size_t *cur_len)$/;"	f
+get_order	mcdonalds.c	/^Node* get_order(void) $/;"	f
+head	mcdonalds.c	/^    Node *head;                                               \/\/\/< head of order list$/;"	m	struct:__order_list	file:
+init_mcdonalds	mcdonalds.c	/^void init_mcdonalds(void)$/;"	f
+issue_order	mcdonalds.c	/^Node* issue_order(unsigned int customerID, enum burger_type type) $/;"	f
+is_ready	mcdonalds.c	/^    bool is_ready;                                            \/\/\/< true if burger is ready$/;"	m	struct:__node	file:
+keep_running	mcdonalds.c	/^sig_atomic_t keep_running = 1;                                \/\/\/< keeps all the threads running$/;"	v
+kitchen_task	mcdonalds.c	/^void* kitchen_task(void *dummy)$/;"	f
+kitchen_thread	mcdonalds.c	/^pthread_t kitchen_thread[NUM_KITCHEN];                        \/\/\/< thread for kitchen$/;"	v
+list	mcdonalds.c	/^    OrderList list;                                           \/\/\/< starting point of list structure$/;"	m	struct:mcdonalds_ctx	file:
+listenfd	mcdonalds.c	/^int listenfd;                                                 \/\/\/< listen file descriptor$/;"	v
+LOCK	mcdonalds.c	/^#define LOCK(/;"	d	file:
+main	client.c	/^int main(int argc, char const *argv[])$/;"	f
+main	mcdonalds.c	/^int main(int argc, char *argv[])$/;"	f
+mcdonalds_ctx	mcdonalds.c	/^struct mcdonalds_ctx {$/;"	s	file:
+mutex	mcdonalds.c	/^    pthread_mutex_t mutex;                                    \/\/\/< mutex variable$/;"	m	struct:__node	file:
+NET_RECV	net.c	/^#define NET_RECV /;"	d	file:
+NET_SEND	net.c	/^#define NET_SEND /;"	d	file:
+next	mcdonalds.c	/^    struct __node *next;                                      \/\/\/< pointer to next node$/;"	m	struct:__node	typeref:struct:__node::__node	file:
+Node	mcdonalds.c	/^} Node;$/;"	t	typeref:struct:__node	file:
+NUM_KITCHEN	mcdonalds.c	/^#define NUM_KITCHEN /;"	d	file:
+OBJECTS	Makefile	/^OBJECTS=$(SOURCES:.c=.o)$/;"	m
+OrderList	mcdonalds.c	/^} OrderList;$/;"	t	typeref:struct:__order_list	file:
+order_left	mcdonalds.c	/^unsigned int order_left(void)$/;"	f
+PORT	client.c	/^#define PORT /;"	d	file:
+PORT	mcdonalds.c	/^#define PORT /;"	d	file:
+print_statistics	mcdonalds.c	/^void print_statistics(void)$/;"	f
+put_data	net.c	/^int put_data(int sock, char *buf, size_t len)$/;"	f
+put_line	net.c	/^int put_line(int sock, char *buf, size_t len)$/;"	f
+server_ctx	mcdonalds.c	/^struct mcdonalds_ctx server_ctx;                              \/\/\/< keeps server context$/;"	v	typeref:struct:mcdonalds_ctx
+serve_client	mcdonalds.c	/^void* serve_client(void* fd)$/;"	f
+sigint_handler	mcdonalds.c	/^void sigint_handler(int sig)$/;"	f
+sigint_handler2	mcdonalds.c	/^void sigint_handler2(int sig)$/;"	f
+SOURCES	Makefile	/^SOURCES=$(wildcard *.c)$/;"	m
+start_server	mcdonalds.c	/^void start_server()$/;"	f
+tail	mcdonalds.c	/^    Node *tail;                                               \/\/\/< tail of order list$/;"	m	struct:__order_list	file:
+TARGET	Makefile	/^TARGET=mcdonalds client$/;"	m
+thread_task	client.c	/^void *thread_task(void *data)$/;"	f
+total_burgers	mcdonalds.c	/^    unsigned int total_burgers[BURGER_TYPE_MAX];              \/\/\/< number of burgers produced by types$/;"	m	struct:mcdonalds_ctx	file:
+total_customers	mcdonalds.c	/^    unsigned int total_customers;                             \/\/\/< number of customers served$/;"	m	struct:mcdonalds_ctx	file:
+total_queueing	mcdonalds.c	/^    unsigned int total_queueing;                               \/\/\/< number of customers in queue$/;"	m	struct:mcdonalds_ctx	file:
+transfer_data	net.c	/^static int transfer_data(int mode, int sock, char *buf, size_t len)$/;"	f	file:
+type	mcdonalds.c	/^    enum burger_type type;                                    \/\/\/< requested burger type$/;"	m	struct:__node	typeref:enum:__node::burger_type	file:
+UNLOCK	mcdonalds.c	/^#define UNLOCK(/;"	d	file:
+_GNU_SOURCE	client.c	/^#define _GNU_SOURCE$/;"	d	file:
+_GNU_SOURCE	mcdonalds.c	/^#define _GNU_SOURCE$/;"	d	file:
+__node	mcdonalds.c	/^typedef struct __node {$/;"	s	file:
+__order_list	mcdonalds.c	/^typedef struct __order_list {$/;"	s	file:

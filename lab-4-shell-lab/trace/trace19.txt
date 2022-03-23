@@ -1,0 +1,8 @@
+#
+# trace19.txt - pipe test1
+#
+
+ls | sort
+
+
+ls | grep my 

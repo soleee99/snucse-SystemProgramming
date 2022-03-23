@@ -1,0 +1,9 @@
+#
+# trace18.txt - Output redirection and path search
+#
+
+echo Hello SysProg! > file
+
+cat file
+
+rm file 
